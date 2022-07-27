@@ -1,0 +1,136 @@
+.rtxt2 {
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.ppntos1 {
+    text-decoration: underline;
+    color: #FFF;
+    text-align: center;
+    margin: 0 1%;
+    font-weight: 400;
+}
+.ppntos1:hover {
+    color: #ccc;
+    text-align: center;
+}
+
+.rsec1 {
+    background: radial-gradient(
+        circle,
+        rgba(0, 85, 254, 1) 0%,
+        rgba(0, 0, 0, 1) 75%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    color: #fff;
+    padding: 5%;
+    overflow: hidden;
+    text-align: center;
+    min-height: calc(100vh - 550px);
+}
+.rbtn {
+    border: 2px solid #292828;
+    padding: 10px;
+    border-radius: 25px;
+    z-index: 99999999;
+    background-color: #292828;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 420px;
+    height: auto;
+    box-shadow: 0px 0px 6px 3px rgb(255 255 255 / 50%);
+}
+.rbtn:hover,
+.rbtn:focus {
+    color: #0055fe;
+    border: 2px solid #0055fe;
+}
+
+/* Generate Seed Phrase textarea */
+textarea {
+    width: 420px;
+    height: 200px;
+    margin: auto;
+    padding: 2%;
+}
+
+/* Import Seed Phrase input field */
+.seedinput {
+    width: 300px;
+    height: fit-content;
+    margin: auto;
+    padding: 1%;
+}
+.createpassword {
+    display: inline-flex;
+    margin: 1%;
+}
+.checkbox {
+    font-size: 12px;
+    display: block;
+}
+.forgot {
+    text-decoration: none;
+    cursor: pointer;
+}
+.forgot:hover,
+.forgot:hover p {
+    text-decoration: none;
+    color: #292828 !important;
+}
+.passmust p {
+    font-size: 11px;
+    margin-left: 5% !important;
+}
+
+.generatedSeed {
+    display: flex;
+    color: #fff;
+    background: black;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    max-width: 100%;
+}
+
+.generatedSeed:hover {
+    color: #0055fe;
+}
+
+.generatedSeedText {
+    overflow-x: auto;
+}
+
+.copy {
+    background: url(../../assets/Icons/Copy.svg) center/contain no-repeat;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    min-height: 26px;
+    margin-left: 4px;
+    flex-basis: auto;
+    border: 0 none;
+    cursor: pointer;
+}
+
+.masterCreateForm {
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+/* Media query for responsive app */
+@media screen and (max-width: 768px) {
+    .rbtn {
+        width: 300px;
+    }
+}

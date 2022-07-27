@@ -1,0 +1,48 @@
+.coin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 69px;
+    width: 69px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background-color: white;
+    color: blue;
+    opacity: 0.9;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+@media (max-width: 1600px) {
+    .coin {
+        height: 49px;
+        width: 49px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 1130px) {
+    .coin {
+        height: 39px;
+        width: 39px;
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 930px) {
+    .coin {
+        height: 29px;
+        width: 29px;
+        font-size: 0.45rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .coin {
+        height: 19px;
+        width: 19px;
+        font-size: 0.275rem;
+    }
+}

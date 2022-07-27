@@ -1,0 +1,254 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* -----Text stylings start----- */
+.txt1 {
+    font-size: 45px;
+    padding: 0 0 2% 0;
+    letter-spacing: 1px !important;
+    font-weight: bolder;
+    margin: auto;
+    text-shadow: #000 1px 0 10px;
+}
+.txt2 {
+    font-size: 18px;
+}
+.txt4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.txt5 {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+.txt6 {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.txt7 {
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+    /* line-height: 1.2; */
+}
+.txt8 {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+    /* line-height: 1.2; */
+}
+.txt8 span {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* --------Text stylings end-------- */
+
+/* -----Button stylings start----- */
+.homebtn {
+    border: 2px solid #292828;
+    padding: 10px;
+    border-radius: 25px;
+    z-index: 99999999;
+    background-color: #292828;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 3%;
+    font-weight: bold;
+    box-shadow: 0px 0px 6px 3px rgb(255 255 255 / 50%);
+}
+.homebtn:hover,
+.homebtn:focus {
+    color: #0055fe;
+    border: 2px solid #0055fe;
+}
+/* --------Button stylings end-------- */
+
+/* -----Section 1/hero start----- */
+.home {
+    background: radial-gradient(
+        circle,
+        rgba(0, 85, 254, 1) 0%,
+        rgba(0, 0, 0, 1) 75%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sec1 {
+    background: url(../../assets/Home/bgHome.svg);
+    background-size: 95% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 10% 5% 5%;
+    overflow: hidden;
+}
+.sec1-1 {
+    padding: 0 5% !important;
+    align-self: center;
+}
+.sec1-2 {
+    text-align: center;
+    align-self: center;
+}
+/* --------Section 1/hero end-------- */
+
+/* -----Section 2 start----- */
+.sec2 {
+    color: #fff;
+    overflow: hidden;
+}
+.sec2-11 {
+    padding: 0 !important;
+    margin: 0;
+}
+.sec2-12 {
+    padding-top: 3%;
+    text-align: center;
+}
+.sec2-13 {
+    padding: 0 5%;
+}
+
+.card-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2% 5% 5% 5%;
+}
+.card {
+    position: inherit !important;
+    background: #292828 !important;
+    border: 2px solid rgb(41, 40, 40) !important;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 8px 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.5);
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: fadeIn;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    text-align: center;
+    border-radius: 0 !important;
+    margin-top: 3%;
+}
+.card:hover {
+    background: #292828 !important;
+    border: 2px solid rgb(229, 151, 47) !important;
+    color: #0055fe !important;
+    box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.3);
+}
+.cardtxt {
+    padding: 0;
+}
+/* --------Section 2 end-------- */
+
+/* Section 3 */
+.sec3 {
+    background: url(../../assets/Home/sec3bg.jpg);
+    background-color: #292828;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3% 5%;
+    overflow: hidden;
+}
+.sec3-1 {
+    padding-left: 5% !important;
+}
+
+/* Section 4 */
+.sec4 {
+    text-align: center;
+    padding: 1.5% 5% 5%;
+}
+.sec4-0 {
+    padding: 3% 5%;
+    font-size: 20px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.sec4-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec4-text-separator {
+    margin: 20px auto;
+}
+
+.sec4-2 {
+    padding: 5%;
+}
+
+/* Section 5 */
+.sec5 {
+    background: url(../../assets/Home/sec5bg.svg);
+    background-color: #292828;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5% 5% !important;
+    overflow: hidden;
+}
+.sec5-11 {
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .sec1 {
+        background: url(../../assets/Home/bgHome.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .card-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Media Query for responsive app */
+@media screen and (max-width: 768px) {
+    .sec1-1 {
+        margin-bottom: 5% !important;
+    }
+    .txt1 {
+        font-size: 2.3rem;
+    }
+    .txt2 {
+        padding-bottom: 2%;
+    }
+    .sec4-1 {
+        margin-top: 2%;
+    }
+    .sec4-2 {
+        padding: 5% 5%;
+    }
+    .txt9 {
+        padding-top: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .txt1 {
+        font-size: 1.7rem;
+    }
+}

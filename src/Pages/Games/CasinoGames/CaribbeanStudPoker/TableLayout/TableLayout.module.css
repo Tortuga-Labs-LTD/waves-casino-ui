@@ -1,0 +1,143 @@
+.dealerCards,
+.playerCards {
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card,
+.pokerCard {
+    height: 170px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.pokerCard {
+    filter: brightness(0.8);
+}
+
+.qualifies {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.anteRaise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto 0;
+}
+
+.ante,
+.raise {
+    width: 80px;
+    height: 80px;
+    line-height: 78px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #c96a32;
+    border: 2px solid #c96a32;
+    border-radius: 100%;
+    margin: auto 15px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ante:hover {
+    -moz-box-shadow: inset 0 0 5px #FFF, inset 0 0 5px #FFF;
+    -webkit-box-shadow: inset 0 0 5px #FFF, inset 0 0 5px #FFF;
+    box-shadow: inset 0 0 5px #FFF, inset 0 0 5px #FFF;
+    cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+
+    .card,
+    .pokerCard {
+        height: 130px;
+        width: 80px;
+    }
+
+    .qualifies {
+        font-size: 1rem;
+    }
+
+    .ante,
+    .raise {
+        width: 60px;
+        height: 60px;
+        line-height: 58px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1130px) {
+
+    .card,
+    .pokerCard {
+        height: 90px;
+        width: 60px;
+    }
+
+    .qualifies {
+        font-size: 0.8rem;
+    }
+
+    .ante,
+    .raise {
+        width: 45px;
+        height: 45px;
+        line-height: 43px;
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 930px) {
+
+    .dealerCards,
+    .playerCards {
+        margin: 15px auto;
+    }
+
+    .card,
+    .pokerCard {
+        height: 70px;
+        width: 45px;
+    }
+
+}
+
+@media (max-width: 470px) {
+
+    .dealerCards,
+    .playerCards {
+        margin: 10px auto;
+    }
+
+    .card,
+    .pokerCard {
+        height: 50px;
+        width: 30px;
+    }
+
+    .qualifies {
+        font-size: 0.5rem;
+    }
+
+    .ante,
+    .raise {
+        width: 35px;
+        height: 35px;
+        line-height: 33px;
+        font-size: 0.5rem;
+    }
+
+}

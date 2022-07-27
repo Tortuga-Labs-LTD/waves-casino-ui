@@ -1,0 +1,300 @@
+.mat {
+    margin: auto;
+    width: 100%;
+    height: 500px;
+}
+
+.mat tbody,
+tr {
+    border-collapse: collapse;
+}
+
+.mat td {
+    position:relative;
+    user-select: none;
+    width: 7%;
+    height: 20%;
+    text-align: center;
+    vertical-align: middle;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: 2px solid #dec345;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: white;
+    white-space: nowrap;
+    background-clip: padding-box;
+}
+
+/* elements */
+.mat .sector {
+    cursor: pointer;
+}
+
+.mat .sector .vt {
+    font-size: 0.7em;
+}
+
+.mat .num {
+    font-size: 1.3em;
+    cursor: pointer;
+    position: relative;
+    background-clip: padding-box;
+}
+
+.mat .num span {
+    position: absolute;
+    display: block;
+    top:50%; 
+    left:50%; 
+    transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.mat .zero {
+    width: 10%;
+    font-size: 3em;
+}
+
+.mat .empty {
+    border: none;
+}
+
+/* colors */
+
+.mat .red {
+    background: #A91607;
+    background-clip: padding-box;
+}
+
+.mat .black {
+    background: #010a01;
+    background-clip: padding-box;
+}
+
+/* control */
+.mat .topLeft {
+    position: absolute;
+    height: calc(100% + 6px);
+    width: calc(100% + 9px);
+    top: -2px;
+    left: -6px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 85% 15%;
+}
+
+.mat .top {
+    position: absolute;
+    height: calc(100% + 6px);
+    width: calc(100% + 6px);
+    top: -2px;
+    left: -3px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 85% 15%;
+}
+
+.mat .topRight {
+    position: absolute;
+    height: calc(100% + 6px);
+    width: calc(100% + 3px);
+    top: -2px;
+    left: -3px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 85% 15%;
+}
+
+.mat .middleLeft {
+    position: absolute;
+    height: calc(100% + 9px);
+    width: calc(100% + 9px);
+    top: -4.5px;
+    left: -6px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 15% 70% 15%;
+}
+
+.mat .middle {
+    position: absolute;
+    height: calc(100% + 9px);
+    width: calc(100% + 6px);
+    top: -4.5px;
+    left: -3px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 15% 70% 15%;
+}
+
+.mat .middleRight {
+    position: absolute;
+    height: calc(100% + 9px);
+    width: calc(100% + 3px);
+    top: -4.5px;
+    left: -3px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 15% 70% 15%;
+}
+
+.mat .bottomLeft {
+    position: absolute;
+    height: calc(100% + 6px);
+    width: calc(100% + 9px);
+    top: -4.5px;
+    left: -6px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 15% 70% 15%;
+}
+
+.mat .bottom {
+    position: absolute;
+    height: calc(100% + 6px);
+    width: calc(100% + 6px);
+    top: -4.5px;
+    left: -3px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 15% 70% 15%;
+}
+
+.mat .bottomRight {
+    position: absolute;
+    height: calc(100% + 6px);
+    width: calc(100% + 3px);
+    top: -4.5px;
+    left: -3px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 15% 70% 15%;
+}
+
+
+/* orientation */
+.mat .vt {
+    display: block;
+    transform: rotate(270deg);
+    white-space: nowrap;
+}
+
+/* others */
+.hidden {
+    display: none;
+}
+
+@media (hover:hover) {
+
+    /* cells hovers */
+    .mat .sector:hover,
+    .mat .num:hover {
+        position: relative;
+        -moz-box-shadow: inset 0 0 5px #FFF, inset 0 0 5px #FFF;
+        -webkit-box-shadow: inset 0 0 5px #FFF, inset 0 0 5px #FFF;
+        box-shadow: inset 0 0 5px #FFF, inset 0 0 5px #FFF;
+        background-clip: padding-box;        
+    }
+
+    .mat .sector:hover {
+        position: relative;
+        background: #1C9022 !important;
+        color: #FBEC0F !important;
+        background-clip: padding-box;
+    }
+
+    .mat .green:hover {
+        position: relative;
+        background-color: #3CC042 !important;
+        color: #FBEC0F !important;
+        background-clip: padding-box;
+    }
+
+    .mat .red:hover {
+        position: relative;
+        background: #C00 !important;
+        color: #FBEC0F !important;
+        background-clip: padding-box;
+    }
+
+    .mat .black:hover {
+        position: relative;
+        background: #000 !important;
+        color: #FBEC0F !important;
+        background-clip: padding-box;
+    }
+}
+
+@media (max-width: 1600px) {
+    .mat {
+        height: 300px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .mat {
+        height: 250px;
+    }
+}
+
+@media (max-width: 930px) {
+    .mat {
+        height: 200px;
+    }
+
+    .mat td {
+        font-size: 1.2em;
+    }
+
+    .mat .sector .vt {
+        font-size: 0.6em;
+    }
+    
+    .mat .num {
+        font-size: 1.2em;
+    }
+
+    .mat .zero {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 900px) {
+    .mat {
+        height: 130px;
+    }
+
+    .mat td {
+        font-size: 0.9em;
+    }
+
+    .mat .sector .vt {
+        font-size: 0.6em;
+    }
+    
+    .mat .num {
+        font-size: 0.9em;
+    }
+
+    .mat .zero {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .mat td {
+        font-size: 0.6em;
+    }
+
+    .mat .sector .vt {
+        font-size: 0.8em;
+    }
+    
+    .mat .num {
+        font-size: 0.6em;
+    }
+
+    .mat .zero {
+        font-size: 1em;
+    }
+}

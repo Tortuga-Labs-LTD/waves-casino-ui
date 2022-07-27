@@ -1,0 +1,960 @@
+.landingWrapper {
+    background: url(../../../../assets/Pages/CaribbeanStudPoker/bg_menu.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.landing {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landingLogo {
+    min-width: 320px;
+    width: 35%;
+    height: auto;
+    margin-top: 25px;
+    opacity: 0.9;
+}
+
+.loading {
+    color: white;
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+.loaderWrapper {
+    background-color: #000;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 55px;
+    position: relative;
+}
+
+.loader,
+.loader:after {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+}
+
+.loader {
+    position: absolute;
+    margin: 30px auto;
+    font-size: 5px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 0.6em solid rgba(229, 151, 47, 0.2);
+    border-right: 0.6em solid rgba(229, 151, 47, 0.2);
+    border-bottom: 0.6em solid rgba(229, 151, 47, 0.2);
+    border-left: 0.6em solid #e5972f;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.landingName {
+    font-size: 8vw;
+    color: white;
+    text-shadow: 0 0 7px #c96a32,
+        0 0 10px #c96a32,
+        0 0 21px #c96a32,
+        0 0 42px #c96a32,
+        0 0 82px #c96a32,
+        0 0 92px #c96a32;
+}
+
+.crop {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 17;
+}
+
+.bg {
+    background: url(../../../../assets/Pages/CaribbeanStudPoker/bg_game.png) center/cover no-repeat;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: flex-end;
+    min-height: 880px;
+}
+
+.craps {
+    padding: 0 40px;
+}
+
+.table {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    padding: 50px;
+}
+
+.absoluteControls {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 110px;
+    left: 10px;
+}
+
+.address {
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    align-self: center;
+    margin-right: 20px !important;
+}
+
+.soundOn {
+    background: url(../../../../assets/Icons/soundOn.svg) center/contain no-repeat;
+}
+
+.soundOff {
+    background: url(../../../../assets/Icons/soundOff.svg) center/contain no-repeat;
+}
+
+.musicOn {
+    background: url(../../../../assets/Icons/musicOn.svg) center/contain no-repeat;
+}
+
+.musicOff {
+    background: url(../../../../assets/Icons/musicOff.svg) center/contain no-repeat;
+}
+
+.soundOn,
+.soundOff,
+.musicOn,
+.musicOff {
+    height: 36px;
+    width: 36px;
+    align-self: center;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px !important;
+}
+
+.chaosOn,
+.chaosOff {
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    background-color: #000;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    width: 170px;
+    height: 44px;
+}
+
+.chaosOnIcon {
+    background: url(../../../../assets/Icons/chaosOff.svg) center/contain no-repeat;
+    background-color: #000;
+}
+
+.chaosOffIcon {
+    background: url(../../../../assets/Icons/chaosOn.svg) center/contain no-repeat;
+    background-color: #000;
+}
+
+.chaosOnIcon,
+.chaosOffIcon {
+    height: 36px;
+    width: 36px;
+    align-self: center;
+    border: none;
+}
+
+.chips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #010a01;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 700px;
+    width: 120px;
+}
+
+.chip,
+.selectedChip {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    cursor: pointer;
+}
+
+.chip {
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.25);
+}
+
+.selectedChip {
+    box-shadow: 0px 0px 24px 0px rgba(255, 215, 0, 1);
+}
+
+.disabledChip {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.brownChip {
+    background: url(../../../../assets/Pages/Roulette/0.01Chip.png) center/cover no-repeat;
+}
+
+.purpleChip {
+    background: url(../../../../assets/Pages/Roulette/0.1Chip.png) center/contain no-repeat;
+}
+
+.whiteChip {
+    background: url(../../../../assets/Pages/Roulette/1Chip.png) center/contain no-repeat;
+}
+
+.redChip {
+    background: url(../../../../assets/Pages/Roulette/5Chip.png) center/contain no-repeat;
+}
+
+.blueChip {
+    background: url(../../../../assets/Pages/Roulette/10Chip.png) center/contain no-repeat;
+}
+
+.greenChip {
+    background: url(../../../../assets/Pages/Roulette/25Chip.png) center/contain no-repeat;
+}
+
+.indigoChip {
+  background: url(../../../../assets/Pages/Roulette/500Chip.png) center/cover
+    no-repeat;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.infoItems {
+    display: flex;
+    width: 200px;
+    height: 80px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    box-shadow: 0px 0px 8px 0px rgb(100, 92, 42);
+    margin-right: 15px;
+}
+
+.mobileTotals {
+    display: none;
+}
+
+.infoItems:last-child {
+    margin-right: 0;
+}
+
+.infoText {
+    text-align: center;
+}
+
+.playOrReset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 0;
+}
+
+.miniButtonsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.miniButton,
+.loaderButton,
+.button {
+    z-index: 15;
+    background-color: #292828;
+    border: 2px solid #292828;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: auto;
+}
+
+.miniButton {
+    font-size: 0.7em;
+    padding: 5px 15px;
+    border-radius: 15px;
+    width: 45%;
+    box-shadow: 0px 0px 3px 1px rgb(255 255 255 / 50%);
+}
+
+.button {
+    padding: 10px 50px;
+    border-radius: 50px;
+    width: 100%;
+    box-shadow: 0px 0px 6px 3px rgb(255 255 255 / 50%);
+}
+
+.loaderButton {
+    font-size: 24px;
+    padding: 10px 50px;
+    border-radius: 50px;
+    width: fit-content;
+    box-shadow: 0px 0px 6px 3px rgb(255 255 255 / 50%); 
+}
+
+.miniButton:disabled,
+.button:disabled,
+.loaderButton:disabled,
+.actionButton:disabled {
+    opacity: 0.5;
+    cursor:default;
+}
+
+.blocksLeft {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #292828;
+    border-radius: 50px;
+    z-index: 15;
+    background-color: #292828;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 75%;
+    height: 80px;
+    box-shadow: 0px 0px 6px 3px rgb(255 255 255 / 50%);
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    height: 400px;
+    width: 120px;
+}
+
+.mainActButtons {
+    height: 200px;
+    width: 120%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgba(1, 10, 1, 0.3);
+    border: 2px solid rgb(255, 243, 188);
+    box-shadow: 0px 0px 6px 3px rgb(255 255 255 / 50%);
+    border-radius: 5px;
+}
+
+.actionButton {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+    background-color: #292828;
+    border: 2px solid #292828;
+    box-shadow: 0px 0px 6px 3px rgb(255 255 255 / 50%);
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.lastResults {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.coins {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* Volume Slider */
+
+.volumeWrapper {
+    background-color: #000;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.volume {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+}
+
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+.volume:focus {
+    outline: none;
+}
+
+.volume::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -5px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.volume::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.volume::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.volume::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #fff;
+    border-radius: 1.3px;
+}
+
+.volume:focus::-webkit-slider-runnable-track {
+    background: #fff;
+}
+
+.volume::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #fff;
+    border-radius: 1.3px;
+}
+
+.volume::-ms-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+
+.volume::-ms-fill-lower {
+    background: #fff;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.volume:focus::-ms-fill-lower {
+    background: #fff;
+}
+
+.volume::-ms-fill-upper {
+    background: #fff;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.volume:focus::-ms-fill-upper {
+    background: #fff;
+}
+
+@media (hover: hover) {
+    .soundOn:hover {
+        background: url(../../../../assets/Icons/soundOn-orange.svg) center/contain no-repeat;
+        background-color: #000;
+    }
+    
+    .soundOff:hover {
+        background: url(../../../../assets/Icons/soundOff-orange.svg) center/contain no-repeat;
+        background-color: #000;
+    }
+
+    .musicOn:hover {
+        background: url(../../../../assets/Icons/musicOn-orange.svg) center/contain no-repeat;
+        background-color: #000;
+    }
+    
+    .musicOff:hover {
+        background: url(../../../../assets/Icons/musicOff-orange.svg) center/contain no-repeat;
+        background-color: #000;
+    }
+
+    .chaosOn:hover {
+        background-color: #000;
+        color: #E5972F;
+    }
+    
+    .chaosOff:hover {
+        background-color: #000;
+        color: #E5972F;
+    }
+
+    .chaosOn:hover .chaosOnIcon{
+        background: url(../../../../assets/Icons/chaosOff-orange.svg) center/contain no-repeat;
+        background-color: #000;
+        color: #E5972F;
+    }
+    
+    .chaosOff:hover .chaosOffIcon{
+        background: url(../../../../assets/Icons/chaosOn-orange.svg) center/contain no-repeat;
+        background-color: #000;
+        color: #E5972F;
+    }
+
+    .enabledChip:hover {
+        box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 1);
+    }
+
+    .miniButton:hover:enabled,
+    .button:hover:enabled,
+    .loaderButton:hover:enabled,
+    .actionButton:hover:enabled {
+        color: #E5972F;
+        border: 2px solid #E5972F;
+    }
+
+    .modalConfirmButton:hover {
+        color: #E5972F;
+        border: 2px solid #E5972F;
+    }
+    
+    .modalCancelButton:hover {
+        color: #E5972F;
+        border: 2px solid #E5972F;
+    }
+    
+}
+
+@media (max-width: 1600px) {
+    .bg {
+        min-height: 685px;
+    }
+
+    .absoluteControls {
+        top: 105px;
+        height: 35px;
+    }
+
+    .address {
+        padding: 5px 20px;
+    }
+
+    .soundOn,
+    .soundOff,
+    .musicOn,
+    .musicOff,
+    .chaosOnIcon,
+    .chaosOffIcon {
+        height: 24px;
+        width: 24px;
+    }
+
+    .chaosOn,
+    .chaosOff {
+        height: 100%;
+    }
+
+    .info {
+        margin-bottom: 10px;
+    }
+
+    .infoItems {
+        width: 140px;
+        height: 50px;
+        font-size: 0.6em;
+        box-shadow: 0px 0px 8px 0px rgba(255, 215, 0, 1);
+    }
+
+    .table {
+        padding: 10px;
+    }
+
+    .craps {
+        padding: 0 10px;
+    }
+
+    .chips {
+        height: 480px;
+        width: 80px;
+    }
+    
+    .chip,
+    .selectedChip {
+        height: 60px;
+        width: 60px;
+    }
+
+    .coins {
+        height: 45px;
+        width: 45px;
+    }
+
+    .actions {
+        width: 80px;
+    }
+
+    .playOrReset {
+        width: 90%;
+    }
+
+    .miniButton {
+        font-size: 0.6em;
+    }
+
+    .blocksLeft {
+        height: 60px;
+        font-size: 0.8em;
+    }
+
+    .button {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1130px) {
+    .bg {
+        min-height: 550px;
+    }
+
+    .absoluteControls {
+        top: 103px;
+        height: 25px;
+    }
+
+    .address {
+        font-size: 0.6em;
+        padding: 5px 10px;
+        margin-right: 10px !important;
+    }
+
+    .volumeWrapper {
+        width: 150px;
+        padding: 3.5px 10px;
+        margin-right: 10px;
+    }
+
+    .chaosOn,
+    .chaosOff {
+        width: 150px;
+    }
+
+    .soundOn,
+    .soundOff,
+    .musicOn,
+    .musicOff,
+    .chaosOnIcon,
+    .chaosOffIcon {
+        height: 18px;
+        width: 18px;
+        margin-right: 5px !important;
+    }
+
+    .coins {
+        height: 35px;
+        width: 35px;
+    }
+
+    .playOrReset {
+        width: 95%;
+        margin-top: 25px;
+    }
+
+    .miniButton {
+        font-size: 0.5em;
+    }
+
+    .blocksLeft {
+        height: 50px;
+        font-size: 0.6em;
+    }
+
+    .button {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width:930px) {
+    .bg {
+        min-height: 425px;
+        height: 100vh;
+        max-height: 500px;
+    }
+
+    .absoluteControls {
+        top: 101px;
+        left: 5px;
+    }
+    
+
+    .volumeWrapper {
+        width: 100px;
+        padding: 0 5px;
+        margin-right: 5px;
+        height: 22px;
+    }
+
+    .chaosOn,
+    .chaosOff {
+        width: 100px;
+        font-size: 0.5em;
+        height: 22px;
+    }
+
+    .address {
+        padding: 5px 10px;
+        font-size: 0.5em;
+        margin-right: 5px !important;
+    }
+
+    .table {
+        padding: 5px;
+    }
+
+    .info {
+        margin-bottom: 5px;
+    }
+
+    .infoItems {
+        width: 95px;
+        height: 30px;
+        font-size: 0.5em;
+        box-shadow: 0px 0px 4px 0px rgba(255, 215, 0, 1);
+        margin-right: 5px;
+    }
+    
+    .desktopTotals {
+        display: none;
+    }
+
+    .mobileTotals {
+        display: block;
+    }
+
+    .coins {
+        height: 28px;
+        width: 28px;
+    }
+
+    .chips {
+        height: 200px;
+        width: 50px;
+    }
+    
+    .chip,
+    .selectedChip {
+        height: 25px;
+        width: 25px;
+    }
+
+    .actions {
+        height: 200px;
+        width: 50px;
+    }
+    
+    .mainActButtons {
+        height: 100px;
+        font-size: 0.5rem;
+    }
+    
+    .actionButton {
+        height: 25px;
+        width: 100%;
+        border-radius: 50px;
+        font-size: 0.5rem;
+    }
+
+    .playOrReset {
+        margin-top: 5px;
+    }
+
+    .miniButton {
+        font-size: 0.45em;
+        padding: 1px 2px;
+    }
+
+    .blocksLeft {
+        font-size: 0.5em;
+        padding: 2px 5px;
+    }
+
+    .button {
+        font-size: 0.5em;
+        padding: 2px 5px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .absoluteControls {
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+
+    .info {
+        flex-wrap: wrap;
+        gap: 2px;
+        justify-content: space-around;
+    }
+
+    .modals {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
+    .craps {
+        padding: 0 5px;
+    }
+    
+}
+
+@media screen and (max-width: 470px) {
+    .bg {
+        min-height: 390px;
+        max-height: 420px;
+    }
+
+    .coins {
+        height: 20px;
+        width: 20px;
+    }
+
+    .chips {
+        height: 200px;
+        width: 50px;
+    }
+    
+    .chip,
+    .selectedChip {
+        height: 20px;
+        width: 20px;
+    }
+    
+    .mainActButtons {
+        height: 100px;
+        font-size: 0.5rem;
+    }
+    
+    .actionButton {
+        height: 20px;
+        font-size: 0.5rem;
+    }
+
+    .miniButton {
+        font-size: 0.425em;
+        padding: 0px 1px;
+    }
+
+    .blocksLeft {
+        height: 40px;
+        font-size: 0.45em;
+    }
+
+    .button {
+        font-size: 0.45em;
+        padding: 1px 3px;
+    }
+}
+

@@ -1,0 +1,78 @@
+.dropdown-menu {
+    background-image: url(../../assets/Footer/footerbg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    position: absolute;
+    top: 100% !important;
+    list-style: none;
+    text-align: center !important;
+    display: block !important;
+    left: auto !important;
+    border-radius: 0% !important;
+    border: none;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    margin-top: -1px !important;
+}
+
+.dropdown-user {
+    right: 0 !important;
+    width: max-content;
+}
+
+.dropdown-menu li {
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: #0055fe;
+}
+
+.dropdown-user.clicked {
+    display: none;
+}
+
+.dropdown-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+    padding-bottom: 0 !important;
+}
+.dropdown-unlink {
+    font-style: italic;
+    color: #000;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    padding: 16px;
+    padding-bottom: 0 !important;
+    line-height: initial !important;
+}
+.dropdown-link:hover {
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: #0055fe;
+}
+.dropdown-unlink:hover {
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: #000;
+}
+.dropdown-link.active,
+.dropdown-unlink.active {
+    border: none;
+}
+
+@media screen and (max-width: 960px) {
+    .fa-caret-down {
+        display: none;
+    }
+}

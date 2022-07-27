@@ -1,0 +1,65 @@
+.rouletteWrapper,
+.cspWrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 15%;
+    margin: auto;
+}
+
+.rouletteWrapper:after,
+.cspWrapper:after {
+    content: "";
+    display: block;
+    padding-bottom: 80%;
+}
+
+.rouletteWrapper {
+    background: url('../../assets/Games/roulette.png') center/cover no-repeat;
+}
+
+.cspWrapper {
+    background: url('../../assets/Games/cbsp.png') center/cover no-repeat;
+}
+
+.comingSoon {
+    background-color: black;
+    padding: 1% 3%;
+    border-radius: 25px;
+}
+
+.inner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0% 0%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.logo {
+    width: 60%;
+    height: auto;
+    opacity: 0.8;
+    display: block;
+}
+
+.text {
+    font-size: 2vw;
+    color: white;
+    text-shadow: 0 0 7px #c96a32,
+        0 0 10px #c96a32,
+        0 0 21px #c96a32,
+        0 0 42px #c96a32,
+        0 0 82px #c96a32,
+        0 0 92px #c96a32;
+}
+
+@media screen and (max-width: 767px) {
+    .text {
+        font-size: 4vw;
+    }
+}

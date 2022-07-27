@@ -1,0 +1,49 @@
+.tnp{
+    background: radial-gradient(
+        circle,
+        rgba(0, 85, 254, 1) 0%,
+        rgba(0, 0, 0, 1) 75%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    color: #fff;
+    padding: 5%;
+    overflow: hidden;
+
+}
+
+/* Styling of text used */
+.tptxt1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 5% 0px 1% 0;
+    color: #fff;
+    text-decoration: underline;
+}
+.tptxt2{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 1% !important;
+    letter-spacing: 0.5px;
+}
+.tptxt2 span{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+.tptxt3{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fff;
+}

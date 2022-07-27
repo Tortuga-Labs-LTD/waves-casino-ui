@@ -1,0 +1,56 @@
+{
+  "name": "nlc-project1",
+  "version": "0.1.0",
+  "homepage": ".",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
+    "@waves/bignumber": "^1.1.1",
+    "@waves/data-entities": "^2.0.7",
+    "@waves/signature-adapter": "^6.1.6",
+    "@waves/waves-transactions": "^4.2.5-beta.3",
+    "bootstrap": "^4.6.0",
+    "classname-react-playing-cards": "^1.0.1",
+    "lottie-web": "^5.7.7",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.5.1",
+    "react-card-flip": "^1.1.5",
+    "react-dom": "^17.0.2",
+    "react-helmet-async": "^1.0.9",
+    "react-howler": "^5.0.0",
+    "react-icons": "^4.2.0",
+    "react-responsive-modal": "^6.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.2.1",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

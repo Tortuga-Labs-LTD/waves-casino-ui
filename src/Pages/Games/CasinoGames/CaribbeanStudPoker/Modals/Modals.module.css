@@ -1,0 +1,292 @@
+.modalContainer {
+    width: 60vw;
+    max-height: 70vh;
+    overflow: auto;
+    text-align: center;
+    padding: 2% 3% ;
+    border-radius: 20px;
+    color: white;
+    z-index: 22;
+}
+
+.modalTable {
+    width: 100%;
+}
+
+.modalHeader,
+.resultHeader {
+    font-size: 3rem;
+    font-weight: bold;
+} 
+
+.modalHeader {
+    color: #eda22f;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
+}
+
+.resultWarning {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.modalTableHead tr {
+    border-bottom: #fff 3px solid;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
+}
+
+.modalTableBody tr {
+    border-bottom: #fff 1px solid;
+}
+
+.modalTableBody tr:last-child {
+    border-bottom: none;
+}
+
+.modalTableBody td {
+    font-size: 1rem;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+.modalText,
+.resultText {
+    font-size: 1.3rem;
+    margin: 20px 0 !important;
+}
+
+.modalText {
+    text-align: left;
+}
+
+.modalBets {
+    margin-top: 50px;
+}
+
+.modalButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.modalConfirmButton,
+.modalCancelButton {
+    border-radius: 25px;
+    padding: 10px 0;
+    z-index: 15;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 40%;
+    height: auto;
+    box-shadow: 0px 0px 6px 3px rgb(255 255 255 / 50%);
+}
+
+.modalConfirmButton {
+    border: 2px solid #1C9022;
+    background-color: #1C9022;
+}
+
+.modalCancelButton {
+    border: 2px solid #A91607;
+    background-color: #A91607;
+}
+
+.topButton,
+.button {
+    z-index: 15;
+    background-color: #292828;
+    border: 2px solid #292828;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: auto;
+}
+
+.button {
+    font-size: 1em;
+    padding: 10px 50px;
+    border-radius: 50px;
+    width: 100%;
+    box-shadow: 0px 0px 6px 3px rgb(255 255 255 / 50%);
+}
+
+.topButton {
+    font-size: 0.8em;
+    padding: 10px 25px;
+    border-radius: 50px;
+    width: fit-content;
+    box-shadow: 0px 0px 6px 3px rgb(255 255 255 / 50%);
+    margin-right: 15px;
+}
+
+.topButton:last-child {
+    margin-right: 0;
+}
+
+.button:disabled,
+.topButton:disabled {
+    opacity: 0.5;
+    cursor:default;
+}
+
+@media (hover: hover) {
+    .button:hover:enabled,
+    .topButton:hover:enabled{
+        color: #E5972F;
+        border: 2px solid #E5972F;
+    }
+
+    .modalConfirmButton:hover {
+        color: #E5972F;
+        border: 2px solid #E5972F;
+    }
+    
+    .modalCancelButton:hover {
+        color: #E5972F;
+        border: 2px solid #E5972F;
+    }
+    
+}
+
+@media (max-width: 1600px) {
+    .modalContainer {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 1130px) {
+    .modalHeader {
+        font-size: 2rem;
+    }
+    
+    .modalTableHead tr {
+        font-size: 1rem;
+    }
+    
+    .centerHeader {
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .modalTableBody td {
+        font-size: 0.9rem;
+        padding: 0px 15px;
+    }
+    
+    .modalText,
+    .resultText {
+        font-size: 0.9rem;
+    }
+
+    .topButton {
+        font-size: 0.5em;
+        padding: 5px 10px;
+    }
+
+    .button {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .topButton {
+        margin-right: 5px;
+        font-size: 0.45em;
+        box-shadow: 0px 0px 3px 1px rgb(255 255 255 / 50%);
+        padding: 0px 5px;
+        height: 100%;
+    }
+
+    .button {
+        font-size: 0.5em;
+        box-shadow: 0px 0px 3px 1px rgb(255 255 255 / 50%);
+        padding: 2px 5px;
+    }
+}
+
+@media (max-width: 700px) {
+    .modalHeader,
+    .resultHeader {
+        font-size: 1.3rem;
+    }
+    
+    .modalTableHead tr {
+        font-size: 0.8rem;
+    }
+    
+    .centerHeader {
+        max-width: 150px;
+        min-width: 150px;
+    }
+
+    .modalTableBody td {
+        font-size: 0.7rem;
+        padding: 0px 5px;
+    }
+    
+    .modalText,
+    .resultText {
+        font-size: 0.8rem;
+    }
+
+    .resultWarning {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .modalConfirmButton,
+    .modalCancelButton {
+        font-size: 0.7rem;
+    }
+    
+    .topButton {
+        margin-right: 0;
+        width: 65px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .modalHeader,
+    .resultHeader {
+        font-size: 1.2rem;
+        margin: 10px 30px;
+    }
+    
+    .modalTableHead tr {
+        font-size: 0.6rem;
+    }
+    
+    .centerHeader {
+        max-width: 100px;
+        min-width: 100px;
+    }
+
+    .modalTableBody td {
+        font-size: 0.5rem;
+    }
+    
+    .modalText,
+    .resultText {
+        font-size: 0.7rem;
+    }
+
+    .button {
+        padding: 1px 3px;
+        font-size: 0.45em;
+    }
+
+    .resultWarning {
+        font-size: 0.7rem;
+    }
+}

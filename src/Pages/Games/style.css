@@ -1,0 +1,21 @@
+/* Games section 1 */
+.gsec1 {
+  background: radial-gradient(
+    circle,
+    rgba(0, 85, 254, 1) 0%,
+    rgba(0, 0, 0, 1) 75%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: #fff;
+  padding: 5%;
+  overflow: hidden;
+}
+.gsec1-21 {
+  margin: 0 5%;
+}
+.react-tabs__tab-list {
+  display: flex;
+}
+.tab {
+  line-height: 3;
+}

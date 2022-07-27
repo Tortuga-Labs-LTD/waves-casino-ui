@@ -1,0 +1,116 @@
+.footer {
+    color: white;
+    padding: 1% 3%;
+    bottom: 0;
+    background-image: url(../../assets/Footer/footerbg.svg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    background-color: #292828;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+}
+.btnport {
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.qlinks a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.qlinks a li {
+    padding: 2% 0;
+}
+.foot1 {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.socials {
+    display: inline-flex;
+    margin: auto;
+}
+
+.socials a {
+    margin: 0 5px;
+    padding: 8px 0;
+    border: 1px solid #0055fe;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+    line-height: 0;
+    color: #fff;
+}
+.socials a:hover {
+    border: 1px solid #0055fe;
+    color: #0055fe;
+    cursor: pointer;
+}
+
+.ppntos {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin: 0 1%;
+}
+.ppntos:hover {
+    color: #0055fe;
+    text-align: center;
+}
+
+.gambleaware {
+    width: 50%;
+    height: auto;
+}
+
+.contact {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.contact:hover {
+    color: #0055fe;
+}
+
+/* @media screen and (max-width: 767.98px) {
+  .secondaryFooter {
+    text-align: left;
+  }
+  .qlinks a li{
+    text-align: left;
+  }
+  .txt5{
+    text-align: left !important;
+  }
+  .footerimg{
+    height: auto;
+    width: 80%;
+  }
+} */
+
+@media (max-width: 1000px) {
+    .gambleaware {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footerimg {
+        width: 80%;
+    }
+    .footerlogo {
+        width: 50%;
+    }
+}

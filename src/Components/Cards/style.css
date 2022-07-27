@@ -1,0 +1,211 @@
+.platfromcard {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.3s ease-in-out;
+    display: inline-flex;
+    /* box-shadow: none; */
+    /* background: #292828 !important; */
+    border: 2px solid transparent;
+    padding: 2% 5% 2% 2%;
+    /* border-radius: 10px; */
+    margin-top: 1.5rem !important;
+    height: auto !important;
+    color: #fff;
+}
+.platfromcard:hover {
+    /* transform: scale(1.1);
+    box-shadow: 0px 0px 15px 8px; */
+    border: 2px solid #0055fe;
+}
+.platfromcard::before {
+    content: "";
+    background: #292828 !important;
+    opacity: 0.3 !important;
+}
+
+.image-container {
+    margin: 2%;
+}
+
+.image-container img {
+    overflow: hidden;
+    /* width: 100px;
+    height: 100px; */
+}
+
+.card-content {
+    margin: 1rem;
+    margin-top: 0.5rem;
+}
+
+h5,
+h4,
+p {
+    margin: 0 !important;
+    padding: 0;
+    color: #fff;
+}
+
+.card-title {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+
+.cardcol {
+    padding: 0 10%;
+}
+
+.teamcard {
+    height: 400px;
+    padding: 0 !important;
+    background: #292828 !important;
+    border: 2px solid rgb(41, 40, 40) !important;
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: fadeIn;
+    border-radius: 10px !important;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 3%;
+}
+
+.staking {
+    padding: 1%;
+    background-color: rgba(41, 40, 40, 0.3);
+}
+.stakingcards {
+    padding: 0 !important;
+    margin: 2% 0;
+}
+.stakingcard {
+    background-color: #292828;
+    text-align: center;
+    padding: 3%;
+    width: 220px;
+    height: 250px;
+    margin: auto;
+}
+.stakingtxt {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #eda22f;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px !important;
+}
+.stakingbtn {
+    background: #0055fe !important;
+    color: #fff;
+    border: none;
+    transition: 0.2s;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 25px;
+    z-index: 99999999;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 3px 6px 3px rgb(255 255 255 / 40%);
+    width: 180px;
+}
+.stakingbtn:hover {
+    background: #fff !important;
+    color: #0055fe;
+}
+.stats {
+    background-color: #292828;
+    padding: 2% 3% 3% 3%;
+}
+.statsdata {
+    text-align: center;
+}
+.sctxt1 {
+    color: #eda22f;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.cardinput {
+    margin: 15% 0 !important;
+}
+.cardinput input {
+    width: 150px;
+}
+
+.achcards {
+    column-count: 5 !important;
+    background-color: rgba(41, 40, 40, 0.3);
+    border: 2px solid rgb(41, 40, 40) !important;
+    padding: 3%;
+}
+.achcard {
+    height: 100%;
+    width: auto;
+    background-color: rgba(41, 40, 40, 0.6);
+    text-align: center;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px #000;
+}
+.achimg {
+    width: 100%;
+    height: 100%;
+}
+.achtxt1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 3% 0 1% 0 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: #000 3px 3px 4px;
+    letter-spacing: 1px;
+}
+
+/* .btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn button{
+    padding: 0.5rem;
+    background-color: #fff;
+    border: none;
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+    border-radius: 3px;
+}
+
+.btn button:hover{
+    background: #000;
+
+}
+
+a{
+    text-transform: uppercase;
+    color: aqua;
+    text-decoration: none;
+    font-weight: bold;
+} */
+
+@media (max-width: 575.98px) {
+    .teamcard {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .stakingcard {
+        margin: auto !important;
+    }
+}
+
+@media (min-width: 1300px) {
+    .teamcard {
+        height: 420px;
+    }
+}

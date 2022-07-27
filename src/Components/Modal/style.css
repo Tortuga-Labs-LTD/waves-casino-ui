@@ -1,0 +1,47 @@
+/* examples/custom-styling.css */
+.customOverlay {
+    background: rgba(36, 123, 160, 0.7);
+}
+.customModal {
+    background-image: url(../../assets/Footer/footerbg.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100%;
+    text-align: center !important;
+    max-width: fit-content !important;
+    padding: 2% 5% !important;
+    border-radius: 20px;
+    border: 3px solid #000;
+}
+
+.txt1{
+    color: #fff;
+}
+.mtxt1{
+    font-size: 14px;
+    color: #ff0000;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.mtxt2{
+    font-size: 14px;
+    color: #ff0000;
+}
+
+.merror{
+    font-size: 14px;
+    color: #ff0000;
+    max-width: fit-content;
+}
+
+.modalsec1{
+    background-color: #222222 !important;
+    border: 2px solid #000 !important;
+}
+
+.modalinput{
+    margin: 1% 0;
+    width: 80%;
+}
