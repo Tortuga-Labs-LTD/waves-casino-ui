@@ -16,6 +16,8 @@ REACT_APP_EXPLORER = `Waves explorer endpoint for the selected instance`
 
 REACT_APP_ROULETTE_ADDRESS = `Dapp address where you hosted the script`
 
+REACT_APP_CSP_ADDRESS = `Dapp address where you hosted the script`
+
 ##### Running the code locally:
 
 Run `npm install` then `npm start`
@@ -24,8 +26,8 @@ Run `npm install` then `npm start`
 
 ###### Game Master:
 
-`<Game Master repo Url>`
+`https://github.com/Tortuga-Labs-LTD/waves-casino-game-master`
 
 ###### API:
 
-`<Api repo Url>`
+`https://github.com/Tortuga-Labs-LTD/waves-casino-api`
