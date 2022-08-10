@@ -14,9 +14,9 @@ REACT_APP_APIURL = `Endpoint for your version of the waves-casino-api`
 
 REACT_APP_EXPLORER = `Waves explorer endpoint for the selected instance`
 
-REACT_APP_ROULETTE_ADDRESS = `Dapp address where you hosted the script`
+REACT_APP_ROULETTE_ADDRESS = `Dapp address where you hosted the Roulette script`
 
-REACT_APP_CSP_ADDRESS = `Dapp address where you hosted the script`
+REACT_APP_CSP_ADDRESS = `Dapp address where you hosted the Caribbean Stud Poker script`
 
 ##### Running the code locally:
 
