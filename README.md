@@ -26,8 +26,8 @@ Run `npm install` then `npm start`
 
 ###### Game Master:
 
-`https://github.com/Tortuga-Labs-LTD/waves-casino-game-master`
+[Link to Waves Casino Game Master](https://github.com/Tortuga-Labs-LTD/waves-casino-game-master)
 
 ###### API:
 
-`https://github.com/Tortuga-Labs-LTD/waves-casino-api`
+[Link to Waves Casino API](https://github.com/Tortuga-Labs-LTD/waves-casino-api)
