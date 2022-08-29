@@ -14,7 +14,9 @@ REACT_APP_APIURL = `Endpoint for your version of the waves-casino-api`
 
 REACT_APP_EXPLORER = `Waves explorer endpoint for the selected instance`
 
-REACT_APP_ROULETTE_ADDRESS = `Dapp address where you hosted the script`
+REACT_APP_ROULETTE_ADDRESS = `Dapp address where you hosted the Roulette script`
+
+REACT_APP_CSP_ADDRESS = `Dapp address where you hosted the Caribbean Stud Poker script`
 
 ##### Running the code locally:
 
@@ -24,8 +26,8 @@ Run `npm install` then `npm start`
 
 ###### Game Master:
 
-`<Game Master repo Url>`
+[Link to Waves Casino Game Master](https://github.com/Tortuga-Labs-LTD/waves-casino-game-master)
 
 ###### API:
 
-`<Api repo Url>`
+[Link to Waves Casino API](https://github.com/Tortuga-Labs-LTD/waves-casino-api)
